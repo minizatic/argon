@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+{{ partial "hero.html" . }}
+<main class="posts">
+    {{ range .Data.Pages }}
+	    <article class="post" style="background-image: url('..{{ .Params.bg }}')">
+		    <h1>
+		    	<a href="{{ .Permalink }}">{{ .Title }}</a>
+		    </h1>
+		</article>
+    {{ end }}
+</main>
+{{ partial "foot.html" . }}

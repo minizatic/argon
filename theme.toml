@@ -1,0 +1,11 @@
+name = "Poly"
+license = "MIT"
+licenselink = "https://github.com/minizatic/argon/LICENSE.md"
+description = "Visual, modern & responsive blog theme for Hugo"
+homepage = "http://blog.blakepatches.me/"
+tags = ["", ""]
+features = ["", ""]
+
+[author]
+  name = "Blake Patches"
+  homepage = "http://blakepatches.me"
