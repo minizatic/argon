@@ -114,10 +114,12 @@ article.post h1 {
     text-align: center;
     margin: 0;
     padding: 0;
+    font-size: 3rem;
 }
 article.post h1 a {
-	font-family: "Montserrat";
+	font-family: "Playfair Display";
 	font-weight: 400;
+	font-style: italic;
 	color: #fff;
 	background-color: black;
 	padding-right: 10px;
