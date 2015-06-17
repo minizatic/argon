@@ -1,10 +1,11 @@
 {{ partial "head.html" . }}
 {{ partial "hero.html" . }}
 <main class="posts">
+{{ $len := len .Data.Pages }}
     {{ range .Data.Pages }}
-	    <article class="post" style="background-image: url('..{{ .Params.bg }}')">
+	    <article class="post {{ if eq $len 1 }}only{{end}}" style="background-image: url('..{{ .Params.bg }}')">
 		    <h1>
-		    	<a href="{{ .Permalink }}">{{ .Title }}</a>
+		    	<a href="{{ .Permalink }}">{{.Title}}</a>
 		    </h1>
 		</article>
     {{ end }}
